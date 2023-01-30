@@ -1,8 +1,8 @@
 const mongoose = require ("mongoose");
 
-var mongoURL = 'mongodb+srv://awaisnaseer001:43564770@atlascluster.hhzi1hy.mongodb.net/mern-rooms';
+var mongoURL = 'mongodb+srv://awaisnaseer001:43564770@atlascluster.hhzi1hy.mongodb.net/test';
 
-mongoose.connect(mongoURL, {useUnifiedTopology: true , useNewUrlParser:true})
+mongoose.connect(mongoURL, {useUnifiedTopology: true, useNewUrlParser:true})
 
 var connection = mongoose.connection
 
@@ -15,4 +15,4 @@ connection.on('connected' , ()=>{
 })
 
 
-module.exports = mongoose 
+module.exports = mongoose
